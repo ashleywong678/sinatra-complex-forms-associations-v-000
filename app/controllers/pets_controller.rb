@@ -31,7 +31,7 @@ class PetsController < ApplicationController
     erb :'/pets/edit'
   end
   
-  # patch '/pets/:id' do
+  patch '/pets/:id' do
   #   binding.pry
   #   if !params[:pet].keys.include?("owner_id")
   #     params[:pet]["owner_id"] = ''
@@ -42,6 +42,6 @@ class PetsController < ApplicationController
   #     @pet.owner = Owner.create(name: params["owner"]["name"])
   #   end
   #   redirect to "pets/#{@pet.id}"
-  # end
+  end
   
 end
